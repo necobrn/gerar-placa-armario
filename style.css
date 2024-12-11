@@ -18,9 +18,9 @@ body {
 .placa {
   display: flex;
   flex-direction: row;
-  width: 36mm;
-  height: 16mm;
-  border: 2px solid black;
+  width: 35mm;
+  height: 17mm;
+  border: 1px solid black;
   text-align: center;
   font-size: 12px;
   margin: 5mm;
@@ -30,11 +30,11 @@ body {
 }
 
 .placa.masculino {
-  background-image: url("https://i.imgur.com/lHbPRoJ.jpeg");
+  background-image: url('img/M.jpg')
 }
 
 .placa.feminino {
-  background-image: url("https://i.imgur.com/OPU0tT6.jpeg");
+  background-image: url('img/F.jpg')
 }
 
 .placa-armario {
@@ -43,7 +43,7 @@ body {
   margin: 0;
   width: 33px;
   height: 23px;
-  margin: 35px 12px 0 12px;
+  margin: 37px 14px 0 14px;
   text-align: center;
   font-weight: 600;
   font-size: 18px;
