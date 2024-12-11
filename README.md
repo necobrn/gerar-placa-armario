@@ -1,0 +1,1 @@
+# gerar-placa-armario
