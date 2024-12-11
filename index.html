@@ -1,0 +1,30 @@
+<div class="container">
+  <h1 class="no-print">Gerar Placas de Armário</h1>
+  <div id="formulario" class="no-print">
+    <div class="form-group">
+      <label for="nome">Nome do Funcionário:</label>
+      <input type="text" id="nome" name="nome">
+    </div>
+    <div class="form-group">
+      <label for="armario">Número do Armário:</label>
+      <input type="number" id="armario" name="armario">
+    </div>
+    <div class="form-group">
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo">
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+      </select>
+    </div>
+    <button class="no-print" onclick="adicionarPlaca()">Adicionar Placa</button>
+  </div>
+
+  <div class="placas-container" id="placas-container"></div>
+
+  <!--         <div class="placa">
+          <p class="placa-armario">1</p>
+          <p class="placa-nome">Tamarin</p>
+        </div> -->
+  <br>
+  <button class="no-print" onclick="window.print()">Imprimir</button>
+</div>

@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.placas-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+}
+
+.placa {
+  display: flex;
+  flex-direction: row;
+  width: 36mm;
+  height: 16mm;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 12px;
+  margin: 5mm;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.placa.masculino {
+  background-image: url("https://i.imgur.com/lHbPRoJ.jpeg");
+}
+
+.placa.feminino {
+  background-image: url("https://i.imgur.com/OPU0tT6.jpeg");
+}
+
+.placa-armario {
+  /*   border: 1px solid red; */
+  text-align: center;
+  margin: 0;
+  width: 33px;
+  height: 23px;
+  margin: 35px 12px 0 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  /*   text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000, */
+  /*              1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000 */
+}
+
+.placa-nome {
+  /*   border: 1px solid red; */
+  font-size: 10px;
+  text-align: left;
+  width: 75px;
+  margin: 0;
+  margin-top: 23%;
+  font-weight: 600;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .no-print {
+    display: none; /* Isso vai esconder os elementos do formulário */
+  }
+
+  .placas-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas iguais */
+    gap: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+    justify-content: center; /* Centraliza as colunas */
+  }
+}
